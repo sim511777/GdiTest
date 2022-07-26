@@ -1,0 +1,8 @@
+## GDI 성능 테스트
+  - 10000회의 GDI 함수 호출시 소요시간 측정
+  - WinForm / Win32API 둘 다 테스트
+  - 프론트버퍼 / 백버퍼 둘 다 테스트
+  - Line, PolyLine, Ellipse, FillEllipse, Rectangle, FillRectangle, DrawString
+  - DrawString
+    - 글자수에 따른 성능 차이
+    - 줄수에 따른 성능 차이

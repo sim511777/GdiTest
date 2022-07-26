@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GdiTest", "GdiTest\GdiTest.csproj", "{81DB5EC6-0143-443E-BF11-934927C314B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "솔루션 항목", "솔루션 항목", "{4A92BA0D-D2ED-40A0-A418-6632F81369B6}"
+	ProjectSection(SolutionItems) = preProject
+		todo.txt = todo.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81DB5EC6-0143-443E-BF11-934927C314B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DB5EC6-0143-443E-BF11-934927C314B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DB5EC6-0143-443E-BF11-934927C314B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DB5EC6-0143-443E-BF11-934927C314B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B79F3592-FB14-40CC-AF00-D58D9C4D7BE0}
+	EndGlobalSection
+EndGlobal
