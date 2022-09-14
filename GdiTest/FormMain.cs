@@ -12,8 +12,6 @@ namespace GdiTest {
     public partial class FormMain : Form {
         public FormMain() {
             InitializeComponent();
-            Console.SetOut(new TextBoxWriter(tbxLog));
-            Console.WriteLine("TextBox console generated");
         }
     }
 }
