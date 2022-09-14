@@ -23,37 +23,80 @@
         /// 이 메서드의 내용을 코드 편집기로 수정하지 마세요.
         /// </summary>
         private void InitializeComponent() {
-            this.pbx = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx)).BeginInit();
+            this.chkOptimizedDoubleBuffer = new System.Windows.Forms.CheckBox();
+            this.chkUserPaint = new System.Windows.Forms.CheckBox();
+            this.chkAllPaintingInWmPaint = new System.Windows.Forms.CheckBox();
+            this.chkOpaque = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
-            // pbx
+            // chkOptimizedDoubleBuffer
             // 
-            this.pbx.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbx.Location = new System.Drawing.Point(0, 0);
-            this.pbx.Name = "pbx";
-            this.pbx.Size = new System.Drawing.Size(800, 450);
-            this.pbx.TabIndex = 0;
-            this.pbx.TabStop = false;
-            this.pbx.Paint += new System.Windows.Forms.PaintEventHandler(this.pbx_Paint);
-            this.pbx.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pbx_MouseMove);
+            this.chkOptimizedDoubleBuffer.AutoSize = true;
+            this.chkOptimizedDoubleBuffer.Location = new System.Drawing.Point(12, 34);
+            this.chkOptimizedDoubleBuffer.Name = "chkOptimizedDoubleBuffer";
+            this.chkOptimizedDoubleBuffer.Size = new System.Drawing.Size(152, 16);
+            this.chkOptimizedDoubleBuffer.TabIndex = 0;
+            this.chkOptimizedDoubleBuffer.Text = "OptimizedDoubleBuffer";
+            this.chkOptimizedDoubleBuffer.UseVisualStyleBackColor = true;
+            this.chkOptimizedDoubleBuffer.CheckedChanged += new System.EventHandler(this.chkOpaque_CheckedChanged);
+            // 
+            // chkUserPaint
+            // 
+            this.chkUserPaint.AutoSize = true;
+            this.chkUserPaint.Location = new System.Drawing.Point(12, 12);
+            this.chkUserPaint.Name = "chkUserPaint";
+            this.chkUserPaint.Size = new System.Drawing.Size(78, 16);
+            this.chkUserPaint.TabIndex = 1;
+            this.chkUserPaint.Text = "UserPaint";
+            this.chkUserPaint.UseVisualStyleBackColor = true;
+            this.chkUserPaint.CheckedChanged += new System.EventHandler(this.chkOpaque_CheckedChanged);
+            // 
+            // chkAllPaintingInWmPaint
+            // 
+            this.chkAllPaintingInWmPaint.AutoSize = true;
+            this.chkAllPaintingInWmPaint.Location = new System.Drawing.Point(12, 56);
+            this.chkAllPaintingInWmPaint.Name = "chkAllPaintingInWmPaint";
+            this.chkAllPaintingInWmPaint.Size = new System.Drawing.Size(142, 16);
+            this.chkAllPaintingInWmPaint.TabIndex = 2;
+            this.chkAllPaintingInWmPaint.Text = "AllPaintingInWmPaint";
+            this.chkAllPaintingInWmPaint.UseVisualStyleBackColor = true;
+            this.chkAllPaintingInWmPaint.CheckedChanged += new System.EventHandler(this.chkOpaque_CheckedChanged);
+            // 
+            // chkOpaque
+            // 
+            this.chkOpaque.AutoSize = true;
+            this.chkOpaque.Location = new System.Drawing.Point(12, 78);
+            this.chkOpaque.Name = "chkOpaque";
+            this.chkOpaque.Size = new System.Drawing.Size(68, 16);
+            this.chkOpaque.TabIndex = 3;
+            this.chkOpaque.Text = "Opaque";
+            this.chkOpaque.UseVisualStyleBackColor = true;
+            this.chkOpaque.CheckedChanged += new System.EventHandler(this.chkOpaque_CheckedChanged);
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pbx);
+            this.Controls.Add(this.chkOpaque);
+            this.Controls.Add(this.chkAllPaintingInWmPaint);
+            this.Controls.Add(this.chkUserPaint);
+            this.Controls.Add(this.chkOptimizedDoubleBuffer);
             this.Name = "FormMain";
             this.Text = "GDI Test";
-            ((System.ComponentModel.ISupportInitialize)(this.pbx)).EndInit();
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.FormMain_Paint);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FormMain_MouseMove);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pbx;
+        private System.Windows.Forms.CheckBox chkOptimizedDoubleBuffer;
+        private System.Windows.Forms.CheckBox chkUserPaint;
+        private System.Windows.Forms.CheckBox chkAllPaintingInWmPaint;
+        private System.Windows.Forms.CheckBox chkOpaque;
     }
 }
 
